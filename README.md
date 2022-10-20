@@ -1,30 +1,8 @@
-# disinformation
+# Disinformation: articles and notebooks based on data from EUvsDisinfo
 
-> Different notebooks to support articles I published at medium
+> Different notebooks to support articles I published at Medium
 
-## Exploring “disinformation” at EUvsDisinfo
-
-> Goal: Make sense of the actual usage of the word "disinformation"
-
-Based on the scraped content of the website [EUvsDisinfo](http://euvsdisinfo.eu/) I created a dataset of all sentences
-containing the word "disinformation".
-
-Most important outcomes:
-
-* The usage of "disinformation" is strongly correlated with the notion of "narrative"
-* We determined a number of KMeans based clusters to allocate the different sentences to 
-* The _centroids_ of the clusters are the most important terms of each cluster, so they give an impression of what 
-the clusters are about.
-* By combining the top terms of clusters with their Part-of-Sentence roles, we get to topic modelling beyond listing terms and gain some insight in the basis of the narratives by identifying places, common names, and verbs.
-
-Article:
-[Exploring “disinformation” at EUvsDisinfo](https://medium.com/@TheProjectista/data-augmentation-in-natural-language-processing-with-textaugment-6e71e028daa3)
-
-Notebook:
-[Exploring "Disinformation" at EUvsDisinfo](disinformation.ipynb) 
-
-
-## An exploration of the notion of "disinformation" as used in the EUvsDisinfo website
+## Disinformation Topics over Time
 
 > Goal: model topics in the EUvsDisinfo database and track them over time
 
@@ -43,3 +21,25 @@ Article:
 
 Notebook:
 [Disinformation Topics over Time](https://github.com/ceesroele/disinformation/blob/main/DisinformationTopicsOverTime.ipynb) 
+
+
+## An exploration of the notion of "disinformation" as used in the EUvsDisinfo website
+
+> Goal: Make sense of the actual usage of the word "disinformation"
+
+Based on the scraped content of the website [EUvsDisinfo](http://euvsdisinfo.eu/) I created a dataset of all sentences
+containing the word "disinformation".
+
+Most important outcomes:
+
+* The usage of "disinformation" is strongly correlated with the notion of "narrative"
+* We determined a number of KMeans based clusters to allocate the different sentences to 
+* The _centroids_ of the clusters are the most important terms of each cluster, so they give an impression of what 
+the clusters are about.
+* By combining the top terms of clusters with their Part-of-Sentence roles, we get to topic modelling beyond listing terms and gain some insight in the basis of the narratives by identifying places, common names, and verbs.
+
+Article:
+[Exploring “disinformation” at EUvsDisinfo](https://medium.com/p/6cec6c7f05e2)
+
+Notebook:
+[Exploring "Disinformation" at EUvsDisinfo](disinformation.ipynb)
